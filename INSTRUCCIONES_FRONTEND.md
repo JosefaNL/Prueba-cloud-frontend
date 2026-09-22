@@ -1,4 +1,4 @@
-# 🚀 Cómo Instalar el Frontend de Libros
+#  Cómo Instalar el Frontend de Libros
 
 ## Paso 1: Crear el Proyecto React
 
@@ -88,19 +88,19 @@ Abre: **http://localhost:5173**
 
 ---
 
-## ✅ Verificar que Todo Funciona
+##  Verificar que Todo Funciona
 
-1. ✅ La página carga correctamente
-2. ✅ El header dice "MisBibliografia"
-3. ✅ Hay un botón "Nuevo Libro"
-4. ✅ Cuando haces click, se abre un formulario
-5. ✅ Puedes llenar los campos y guardar
-6. ✅ Los libros aparecen en tarjetas
-7. ✅ Puedes editar y eliminar libros
+1.  La página carga correctamente
+2.  El header dice "MisBibliografia"
+3.  Hay un botón "Nuevo Libro"
+4.  Cuando haces click, se abre un formulario
+5.  Puedes llenar los campos y guardar
+6.  Los libros aparecen en tarjetas
+7.  Puedes editar y eliminar libros
 
 ---
 
-## 🔗 Conectar con el Backend
+##  Conectar con el Backend
 
 ### Backend (Spring Boot)
 
@@ -147,7 +147,7 @@ Backend debe estar en: **http://localhost:8080**
 
 ---
 
-## 🎨 Personalizaciones Adicionales
+##  Personalizaciones Adicionales
 
 ### Cambiar Colores Primarios
 
@@ -169,7 +169,7 @@ En `App.jsx`, busca "MisBibliografia" y cámbialo:
 
 ---
 
-## 🆘 Problemas Comunes
+##  Problemas Comunes
 
 ### Error: "Cannot find module 'axios'"
 ```bash
@@ -194,7 +194,7 @@ npm install lucide-react
 
 ---
 
-## 📱 Ahora es Tu Turno
+##  Ahora es Tu Turno
 
 ¡El frontend está listo! Solo copia los archivos y ejecuta. Si algo no funciona, avísame y lo arreglamos juntos.
 

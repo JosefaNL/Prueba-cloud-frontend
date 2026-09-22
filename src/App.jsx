@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import { Plus, Trash2, Edit2, BookOpen } from 'lucide-react';
 import libroService from './services/libroService';
 import LibroCard from './components/LibroCard';
 import LibroForm from './components/LibroForm';
 import './index.css';
+import { Plus, Trash2, Edit2, BookOpen, Search, AlertCircle, CheckCircle, Loader } from 'lucide-react';
 
 function App() {
   const [libros, setLibros] = useState([]);
@@ -101,8 +101,13 @@ function App() {
         {/* Error Message */}
         {error && (
           <div className="mb-6 bg-red-500 text-white p-4 rounded-lg animate-pulse">
-            <p className="font-semibold">❌ Error</p>
-            <p>{error}</p>
+            <div className="flex items-center space-x-3">
+              <AlertCircle className="w-5 h-5" />
+              <div>
+                <p className="font-semibold">Error</p>
+                <p>{error}</p>
+              </div>
+            </div>
           </div>
         )}
 
@@ -121,13 +126,14 @@ function App() {
         )}
 
         {/* Search Bar */}
-        <div className="mb-8">
+        <div className="mb-8 relative">
+          <Search className="absolute left-4 top-3.5 w-5 h-5 text-slate-400" />
           <input
             type="text"
-            placeholder="🔍 Buscar por título o autor..."
+            placeholder="Buscar por titulo o autor..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full px-4 py-3 rounded-lg bg-slate-700 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary"
+            className="w-full pl-12 pr-4 py-3 rounded-lg bg-slate-700 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary"
           />
         </div>
 
@@ -153,7 +159,10 @@ function App() {
               </div>
               <div className="bg-slate-700 rounded-lg p-4 text-center">
                 <p className="text-slate-400 text-sm">Estado</p>
-                <p className="text-3xl font-bold text-accent">✓ Activo</p>
+                <div className="flex items-center justify-center space-x-2 mt-2">
+                  <CheckCircle className="w-6 h-6 text-accent" />
+                  <span className="text-xl font-bold text-accent">Activo</span>
+                </div>
               </div>
             </div>
 

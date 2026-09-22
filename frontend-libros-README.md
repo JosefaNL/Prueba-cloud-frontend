@@ -1,23 +1,23 @@
-# Frontend - CRUD de Libros 📚
+# Frontend - CRUD de Libros
 
 Frontend moderno y responsivo para gestionar una biblioteca personal. Construido con **React 18** + **Tailwind CSS** + **Axios**.
 
-## 🚀 Características
+## Características
 
-✅ **CRUD Completo** - Crear, leer, actualizar y eliminar libros  
-✅ **Diseño Moderno** - Interfaz elegante con Tailwind CSS  
-✅ **Responsivo** - Funciona en desktop, tablet y móvil  
-✅ **Búsqueda en Tiempo Real** - Filtrar libros por título o autor  
-✅ **Validación de Formularios** - Campos requeridos validados  
-✅ **Manejo de Errores** - Mensajes claros al usuario  
-✅ **Animaciones Suaves** - Transiciones y efectos visuales  
+ **CRUD Completo** - Crear, leer, actualizar y eliminar libros  
+ **Diseño Moderno** - Interfaz elegante con Tailwind CSS  
+ **Responsivo** - Funciona en desktop, tablet y móvil  
+ **Búsqueda en Tiempo Real** - Filtrar libros por título o autor  
+ **Validación de Formularios** - Campos requeridos validados  
+ **Manejo de Errores** - Mensajes claros al usuario  
+ **Animaciones Suaves** - Transiciones y efectos visuales  
 
-## 📋 Requisitos Previos
+##  Requisitos Previos
 
 - Node.js 16+
 - npm o yarn
 
-## 🛠️ Instalación Rápida
+##  Instalación Rápida
 
 ```bash
 # 1. Crear proyecto Vite + React
@@ -35,7 +35,7 @@ npx tailwindcss init -p
 npm install axios lucide-react
 ```
 
-## 📁 Estructura de Archivos
+##  Estructura de Archivos
 
 ```
 frontend-libros/
@@ -56,7 +56,7 @@ frontend-libros/
 └── package.json
 ```
 
-## 🔧 Configuración
+##  Configuración
 
 ### 1. Variables de Entorno
 
@@ -86,7 +86,7 @@ export default {
 }
 ```
 
-## 🚀 Ejecución
+##  Ejecución
 
 **Desarrollo:**
 ```bash
@@ -110,7 +110,7 @@ npm run preview
 | PUT | `/api/libros/{id}` | Actualizar un libro |
 | DELETE | `/api/libros/{id}` | Eliminar un libro |
 
-## 📦 Modelo de Datos Esperado
+##  Modelo de Datos Esperado
 
 ```javascript
 {
@@ -125,7 +125,7 @@ npm run preview
 }
 ```
 
-## 🎨 Personalización
+##  Personalización
 
 ### Colores
 Edita `tailwind.config.js`:
@@ -151,7 +151,7 @@ Añade en `src/index.css`:
 }
 ```
 
-## 🐛 Solución de Problemas
+##  Solución de Problemas
 
 ### "Cannot find module 'axios'"
 ```bash
@@ -169,7 +169,7 @@ Asegúrate que tu backend tenga CORS habilitado:
 npm run dev -- --port 3000
 ```
 
-## 📝 Ejemplo de Uso
+##  Ejemplo de Uso
 
 1. **Inicia el backend** (Spring Boot en puerto 8080)
 2. **Inicia el frontend** (Vite en puerto 5173)
@@ -177,7 +177,7 @@ npm run dev -- --port 3000
 4. **Completa el formulario y guarda**
 5. **La lista se actualiza automáticamente**
 
-## 🎯 Características Futuras
+##  Características Futuras
 
 - [ ] Autenticación de usuarios
 - [ ] Clasificación por estrellas
@@ -187,7 +187,7 @@ npm run dev -- --port 3000
 - [ ] Categorías personalizadas
 - [ ] Historial de lectura
 
-## 📄 Licencia
+##  Licencia
 
 Proyecto educativo - Libre para usar y modificar
 
