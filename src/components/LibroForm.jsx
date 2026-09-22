@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { X, Save } from 'lucide-react';
+import { X, Save, Edit2, Plus } from 'lucide-react';
 
 function LibroForm({ onSubmit, libroInicial, onCancel }) {
   const [formData, setFormData] = useState({
@@ -56,9 +56,19 @@ function LibroForm({ onSubmit, libroInicial, onCancel }) {
   return (
     <div className="bg-slate-700 rounded-lg shadow-lg-custom p-6 border border-slate-600">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-bold text-white">
-          {libroInicial ? '✏️ Editar Libro' : '➕ Agregar Nuevo Libro'}
-        </h2>
+        <div className="flex items-center space-x-2">
+          {libroInicial ? (
+            <>
+              <Edit2 className="w-6 h-6 text-white" />
+              <h2 className="text-2xl font-bold text-white">Editar Libro</h2>
+            </>
+          ) : (
+            <>
+              <Plus className="w-6 h-6 text-white" />
+              <h2 className="text-2xl font-bold text-white">Agregar Nuevo Libro</h2>
+            </>
+          )}
+        </div>
         <button
           onClick={onCancel}
           className="text-slate-400 hover:text-white transition"
@@ -66,6 +76,7 @@ function LibroForm({ onSubmit, libroInicial, onCancel }) {
           <X className="w-6 h-6" />
         </button>
       </div>
+
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -141,7 +152,7 @@ function LibroForm({ onSubmit, libroInicial, onCancel }) {
 
           {/* Rating */}
           <div>
-            <label className="block text-slate-300 font-semibold mb-2">Rating ⭐ ({formData.rating}/5)</label>
+            <label className="block text-slate-300 font-semibold mb-2">Rating ({formData.rating}/5)</label>
             <input
               type="range"
               name="rating"
